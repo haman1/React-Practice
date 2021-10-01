@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stateless Functional Components</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <!-- REACT LIBRARY -->
+   <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+   <!-- REACT DOM LIBRARY -->
+   <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+   <!-- BABEL LIBRARY -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="app">React has not rendered yet</div>
+ <!-- JAVASCRIPT -->
+ <script type="text/babel">
 
+   var Kenya = function() {
+       return(
+           <h1>Nairobi</h1>
+
+       );
+   }
+
+    var Tz = function () {
+        return(
+            <h1> Daresalaam</h1>
+        );
+    }
+
+    var UG = function () {
+        return(
+            <h1>Kampala</h1>
+        );
+    }
+    ReactDOM.render(
+      // REACT WHAT - JSX
+      
+    <div>
+        <Kenya/>
+        <Tz/>
+        <UG/>
+    </div>,
+      // REACT WHERE - DIV WITH ID OF "APP"
+      document.getElementById("app")
+    );
+
+  </script>
+</body>
+</html>
